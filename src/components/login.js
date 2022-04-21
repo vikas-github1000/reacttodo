@@ -111,7 +111,7 @@ function Login() {
                     </div><br />
                 </form>
                 <p className="h5 text-light sign-up-link"><button className="sign-up-btn bg-dark text-primary" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">Don't have an account?? Sign-up</button></p>
+                    data-bs-target="#staticBackdrop">Don't have an account?? ckick here</button></p>
             </div>
 
             <div className="modal fade" id="staticBackdrop" data-bs-keyboard="false">
