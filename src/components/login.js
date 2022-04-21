@@ -97,7 +97,7 @@ function Login() {
         <div className="Login bg-dark">
             <div className="form-class-body bg-light">
                 <form className="form-class bg-light text-dark">
-                    <p className="h2 text-light">LOGIN FORM</p><br />
+                    <p className="h2 text-dark">LOGIN FORM</p><br />
                     <div className="col-md-6">
                         <label for="inputEmail4" className="form-label">Email</label>
                         <input type="text" className="form-control" id="email" onChange={(e) => setUsername(e.target.value)} required />
