@@ -1,0 +1,43 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20%;
+}
+.form-class-body{
+    margin-left: 30%;
+    padding: 10%;
+    width: 80vh;
+    height: 100vh;
+}
+
+.h2{
+    text-align: center;
+}
+.form-class div{
+    width: 110%;
+    margin-left: -5%;
+}
+.submit-btn{
+    width: 40%;
+    margin-left: 30%;
+}
+
+.sign-up-btn{
+    width: 140%;
+    padding: 0;
+    border: none;
+    text-decoration: underline;
+    margin-left: -15%;
+}
+
+.signup-form{
+    width: 140%;
+    margin-left: 15%;
+}
+.signup-btn{
+    width: 20%;
+    margin-left: 15%;
+}
