@@ -32,7 +32,7 @@ function Addtodo ({updateCount, count, update}) {
             date,
         };
     
-        fetch("http://localhost:4000/updateData", {
+        fetch("https://vishal-node.herokuapp.com/updateData", {
             method: "PATCH",
             headers: {
                 Accept: "application/json",
@@ -59,7 +59,7 @@ function Addtodo ({updateCount, count, update}) {
             date,
         };
     
-        fetch("http://localhost:4000/addTodoList", {
+        fetch("https://vishal-node.herokuapp.com/addTodoList", {
             method: "POST",
             headers: {
                 Accept: "application/json",

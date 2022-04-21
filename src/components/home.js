@@ -30,7 +30,7 @@ function Home() {
 
     let getData = async () => {
         setLoading(true);        
-        const url = await fetch(`http://localhost:4000/getData`);
+        const url = await fetch(`https://vishal-node.herokuapp.com/getData`);
         const data = await url.json();
         setData(data);
         setLoading(false);

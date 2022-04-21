@@ -22,7 +22,7 @@ function Todolist({ data, updateCount, count, setUpdate , posts , loading }) {
             id,
         };
 
-        fetch("http://localhost:4000/deleteTask", {
+        fetch("https://vishal-node.herokuapp.com/deleteTask", {
             method: "DELETE",
             headers: {
                 Accept: "application/json",

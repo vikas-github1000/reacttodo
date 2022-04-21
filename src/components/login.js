@@ -25,7 +25,7 @@ function Login() {
             password,
         };
         debugger;
-        fetch("http://localhost:4000/login", {
+        fetch("https://vishal-node.herokuapp.com/login", {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -71,7 +71,7 @@ function Login() {
         };
         console.log(data);
 
-        fetch("http://localhost:4000/register", {
+        fetch("https://vishal-node.herokuapp.com/register", {
             method: "POST",
             headers: {
                 Accept: "application/json",
