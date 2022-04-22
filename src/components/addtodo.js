@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../index.css';
 
 function Addtodo ({updateCount, count, update}) {
@@ -6,6 +7,7 @@ function Addtodo ({updateCount, count, update}) {
     const [ id, setId ] = useState("");
     const [ task, setTodo ] = useState("");
     const [ date, setDate] = useState("");
+    const navigate = useNavigate();
 
     useEffect(() => {
         if(update.id === undefined){
@@ -73,8 +75,15 @@ function Addtodo ({updateCount, count, update}) {
         updateCount(count+1);
     }
 
+     //logout function
+     let logout = () => {
+        document.cookie = "cname" + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        navigate("/");
+    }
+
     return (
         <div className=' add'>
+            <br /><button onClick={logout} className="btn btn-primary logout-btn">Log Out</button>
         <form className="row bg-light" id="new-task-form">
                     <br/>
                     <p className="h2">Add</p>

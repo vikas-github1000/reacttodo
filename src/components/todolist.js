@@ -33,11 +33,7 @@ function Todolist({ data, updateCount, count, setUpdate , posts , loading }) {
         updateCount(count + 1);
     }
 
-    //logout function
-    let logout = () => {
-        document.cookie = "cname" + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-        navigate("/");
-    }
+   
 
     if (loading) {
         return <h2>Loading...</h2>;
@@ -45,8 +41,6 @@ function Todolist({ data, updateCount, count, setUpdate , posts , loading }) {
 
     return (
         <div className="tablelist">
-           
-            <br /><button onClick={logout} className="btn btn-primary logout-btn">Log Out</button>
             <br /><p className="h1">task</p>
             <table className="table table-light table-hover" id="tasklist">
                 <thead>
@@ -57,11 +51,11 @@ function Todolist({ data, updateCount, count, setUpdate , posts , loading }) {
                         <th scope="col">Completed</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="todoelm">
                     {posts.map((listValue, index) => {
                         return (
                             <tr key={index}>
-                                <td>{listValue.u_id}</td>
+                                <td>{listValue.id}</td>
                                 <td>{listValue.task}</td>
                                 <td>{listValue.date.slice(0, 10)}</td>
                                 <td><button className="btn " id="updateBtn" onClick={() => updateData(listValue.id, listValue.task, listValue.date.slice(0, 10))}>Update</button>{" "}

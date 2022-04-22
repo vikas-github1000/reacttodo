@@ -12,11 +12,9 @@ const Posts = ({ posts, loading }) => {
       {posts.map(post => (
         <li key={post.id} className='list-group-item'>
           {post.title}
-        </li>
-        
+        </li>        
       ))}
     </ul>
-
 </div>
   );
 };

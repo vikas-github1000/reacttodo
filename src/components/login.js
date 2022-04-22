@@ -93,10 +93,10 @@ function Login() {
   };
 
   return (
-    <div className="Login bg-dark">
-      <div className="form-class-body bg-dark">
-        <form className="form-class bg-dark text-light">
-          <p className="h2 text-light">LOGIN FORM</p>
+    <div className="Login bg-light">
+      <div className="form-class-body bg-light">
+        <form className="form-class bg-light text-dark">
+          <p className="h2 text-dark"> Welcome to login page </p>
           <br />
           <div className="col-md-6">
             <label for="inputEmail4" className="form-label">
@@ -127,29 +127,28 @@ function Login() {
             <br />
             <button
               type="submit"
-              className="btn btn-primary btn-lg submit-btn"
+              className="btn btn-green btn-lg submit-btn"
               onClick={signIn}
             >
-              Sign in
+              Login
             </button>
           </div>
           <br />
         </form>
         <p className="h5 text-light sign-up-link">
           <button
-            className="sign-up-btn bg-dark text-primary"
+            className="sign-up-btn bg-light text-primary"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
-          >
-            Don't have an account?? Sign-up
+          >Register 
           </button>
         </p>
       </div>
 
       <div className="modal fade register-modal" id="staticBackdrop" data-bs-keyboard="false">
         <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content bg-dark text-light">
-            <div className="modal-header text-light">
+          <div className="modal-content bg-light text-light">
+            <div className="modal-header text-dark">
               <h5 className="modal-title h4" id="exampleModalLabel">
                 Registration Form
               </h5>
@@ -161,7 +160,7 @@ function Login() {
               ></button>
             </div>
             <br />
-            <form className="text-light signup-form">
+            <form className="text-dark signup-form">
               <div className="col-md-6">
                 <label for="inputName2" className="form-label">
                   Name
@@ -221,7 +220,7 @@ function Login() {
                   className="btn btn-primary signup-btn"
                   onClick={register}
                 >
-                  Sign Up
+                  Submit
                 </button>
               </div>
               <br />
@@ -232,7 +231,7 @@ function Login() {
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
-                Close
+                X
               </button>
             </div>
           </div>
